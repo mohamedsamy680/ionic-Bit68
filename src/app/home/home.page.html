@@ -1,0 +1,89 @@
+<!--
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank WITH SAMY FIRST TRY
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+-->
+<ion-content>
+  <!--
+  <div class="ion-padding">
+    The world is your oyster.
+    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <ion-item [routerLink]="['/', 'movies']">Moive</ion-item>
+  </div>
+  -->
+  
+  <!-- its an ugly way to apply in-line styles #SAMY-->
+    <ion-slides   [options]="slideOpts"  pager="true"
+                      style="color: black; 
+                      background: #f1f1f1; 
+                      height: -webkit-fill-available;">
+      <!-- start with first slide #SAMY -->
+      <ion-slide>
+        <ion-card style="height: -webkit-fill-available;">
+            <ion-img [src]="slideOne" style=" margin: 10% 15%;"></ion-img>
+            <ion-card-header>
+              <ion-card-subtitle>SAMY</ion-card-subtitle>
+              <ion-card-title>Splash, Home</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              Ionic is a complete open-source SDK for hybrid mobile app development created by Max Lynch,
+              The original version was built on top of AngularJS and Apache Cordova.
+            </ion-card-content>
+            <ion-chip>
+                <ion-label name="close-circle" [routerLink]="['/', 'movies']">See More</ion-label>
+            </ion-chip>
+        </ion-card>
+      </ion-slide>
+      <!-- end with first slide #SAMY -->
+
+
+      <!-- start with second slide #SAMY -->
+      <ion-slide>
+          <ion-card style="height: -webkit-fill-available;">
+            <ion-img [src]="slideTwo" style=" margin: 10% 15%;"></ion-img>
+            <ion-card-header>
+              <ion-card-subtitle>SAMY</ion-card-subtitle>
+              <ion-card-title>Splash, Home</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+                Ionic is a complete open-source SDK for hybrid mobile app development created by Max Lynch,
+                The original version was built on top of AngularJS and Apache Cordova.
+         </ion-card-content>
+            <ion-chip>
+                <ion-label name="close-circle" [routerLink]="['/', 'movies']">See More</ion-label>
+            </ion-chip>
+          </ion-card>
+      </ion-slide>
+      <!-- end with second slide #SAMY -->
+      
+
+      <!-- start with third slide #SAMY -->
+      <ion-slide>
+          <ion-card style="height: -webkit-fill-available;">
+              <ion-img [src]="slideThree" style=" margin: 10% 10%;"></ion-img>
+              <ion-card-header>
+                <ion-card-subtitle>SAMY</ion-card-subtitle>
+                <ion-card-title>Splash, Home</ion-card-title>
+              </ion-card-header>
+              
+              <ion-card-content>
+                Ionic is a complete open-source SDK for hybrid mobile app development created by Max Lynch,
+                The original version was built on top of AngularJS and Apache Cordova.
+            </ion-card-content>
+              <ion-chip>
+                  <ion-label name="close-circle" [routerLink]="['/', 'movies']">See More</ion-label>
+              </ion-chip>
+            </ion-card>
+      </ion-slide>
+      <!-- end with third slide #SAMY -->
+
+
+    </ion-slides> <!-- end of slider -->
+    
+</ion-content>

@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Market Category</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!-- RETERIVE DATA FROM https://5bcce576cf2e850013874767.mockapi.io/task/categories #SAMY-->
+    <ion-card *ngFor=" let moive of movies">
+        <ion-img [src]="moive.category_img"></ion-img>
+        <ion-card-header>
+          <ion-card-subtitle>Splash, Listing</ion-card-subtitle>
+          <ion-card-title>{{moive.name}}</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Keep close to Nature's heart... and break clear away, once in awhile,
+          and climb a mountain or spend a week in the woods. Wash your spirit clean.
+        </ion-card-content>
+        <ion-chip>
+            <ion-label name="close-circle" [routerLink]="['/', 'home']">Back home</ion-label>
+        </ion-chip>
+      </ion-card>  
+</ion-content>
